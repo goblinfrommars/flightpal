@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="581.0" prefWidth="883.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.flightpalfx.EditAirlineController">
+   <children>
+      <VBox layoutX="95.0" layoutY="55.0" prefHeight="581.0" prefWidth="883.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <GridPane prefHeight="623.0" prefWidth="883.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="434.0" minWidth="10.0" prefWidth="345.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="701.0" minWidth="10.0" prefWidth="538.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="375.0" minHeight="10.0" prefHeight="69.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="513.0" minHeight="10.0" prefHeight="512.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #9D71E8;" GridPane.rowSpan="2">
+                     <padding>
+                        <Insets bottom="60.0" left="60.0" right="60.0" top="60.0" />
+                     </padding>
+                     <children>
+                        <Label text="Airline Name" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="addAirlineName" maxHeight="-Infinity" prefHeight="35.0" style="-fx-background-color: #F2F7FF; -fx-background-radius: 100;">
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="10.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <Label text="Airline Website" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="addAirlineWeb" maxHeight="-Infinity" prefHeight="35.0" style="-fx-background-color: #F2F7FF; -fx-background-radius: 100;">
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="10.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <VBox alignment="CENTER" prefHeight="73.0" prefWidth="225.0">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#addAirlineBtnOnClick" prefHeight="44.0" prefWidth="110.0" style="-fx-background-color: #B2C9FF; -fx-background-radius: 100;" text="Add Airline" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #F2F7FF;" GridPane.columnIndex="1">
+                     <children>
+                        <Label text="Edit Airlines" textFill="#023047">
+                           <font>
+                              <Font name="System Bold" size="23.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #ffffff;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <children>
+                        <TableView fx:id="airlineEditTable" prefHeight="339.0" prefWidth="536.0">
+                          <columns>
+                            <TableColumn fx:id="editAirlineID" prefWidth="101.0" style="-fx-background-color: #9D71E8; -fx-font-color: #eee;" text="Airline Id" />
+                            <TableColumn fx:id="editAirlineNAME" prefWidth="203.0" style="-fx-background-color: #9D71E8;" text="Airline Name" />
+                              <TableColumn fx:id="editAirlineWEB" prefWidth="153.0" style="-fx-background-color: #9D71E8;" text="Airline Website" />
+                          </columns>
+                        </TableView>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Button mnemonicParsing="false" prefHeight="42.0" prefWidth="107.0" style="-fx-background-color: #9D71E8; -fx-background-radius: 100; -fx-font: #000;" text="Update" textFill="WHITE">
+                                 <HBox.margin>
+                                    <Insets left="5.0" right="5.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Button layoutX="439.0" layoutY="38.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="107.0" style="-fx-background-color: #F72585; -fx-background-radius: 100;" text="Delete" textFill="WHITE">
+                                 <HBox.margin>
+                                    <Insets left="5.0" right="5.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Button layoutX="332.0" layoutY="38.0" mnemonicParsing="false" onAction="#addAirlineExitBtnOnClick" prefHeight="42.0" prefWidth="107.0" style="-fx-background-color: #F72585; -fx-background-radius: 100;" text="Exit" textFill="WHITE">
+                                 <HBox.margin>
+                                    <Insets left="5.0" right="5.0" />
+                                 </HBox.margin>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                           <padding>
+                              <Insets bottom="20.0" left="20.0" top="20.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                     <padding>
+                        <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </GridPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

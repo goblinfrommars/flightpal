@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="693.0" prefWidth="1131.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.flightpalfx.AdminMenuController">
+   <children>
+      <VBox layoutX="104.0" layoutY="89.0" prefHeight="693.0" prefWidth="1131.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="697.0" fitWidth="1134.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </VBox>
+      <VBox prefHeight="693.0" prefWidth="1131.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <GridPane prefHeight="725.0" prefWidth="1131.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="219.0" minHeight="0.0" prefHeight="121.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="616.0" minHeight="10.0" prefHeight="572.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <GridPane prefHeight="37.0" prefWidth="1131.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="346.0" minWidth="10.0" prefWidth="341.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="815.0" minWidth="10.0" prefWidth="449.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="359.0" minWidth="10.0" prefWidth="336.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                           <GridPane.margin>
+                              <Insets bottom="10.0" left="40.0" right="10.0" top="10.0" />
+                           </GridPane.margin>
+                           <children>
+                              <Circle fill="#9381ff" radius="38.0" stroke="BLACK" strokeWidth="0.0" />
+                              <VBox alignment="CENTER_LEFT" prefHeight="76.0" prefWidth="275.0">
+                                 <children>
+                                    <Label fx:id="adminMenuAdminUsername" text="Admin Username">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets bottom="7.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label fx:id="adminMenuAdminId" text="Admin Id" />
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
+                           <GridPane.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </GridPane.margin>
+                           <children>
+                              <Label text="Flightpal Administrator Mode">
+                                 <font>
+                                    <Font size="21.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2">
+                           <GridPane.margin>
+                              <Insets bottom="10.0" left="10.0" right="40.0" top="10.0" />
+                           </GridPane.margin>
+                           <children>
+                              <Button fx:id="adminMenuLogoutBtn" mnemonicParsing="false" onAction="#adminMenuLogoutBtnOnClick" prefHeight="35.0" prefWidth="103.0" style="-fx-background-color: #ff4040; -fx-background-radius: 100;" text="Logout" textFill="WHITE">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </GridPane>
+                  <VBox prefHeight="332.0" prefWidth="971.0" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets bottom="180.0" left="180.0" right="180.0" top="180.0" />
+                     </GridPane.margin>
+                     <children>
+                        <GridPane prefHeight="518.0" prefWidth="1011.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="723.0" minWidth="10.0" prefWidth="255.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="723.0" minWidth="10.0" prefWidth="256.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="723.0" minWidth="10.0" prefWidth="266.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <VBox alignment="CENTER" onMouseClicked="#airlinesManagerBtnOnClick" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #9381ff; -fx-background-radius: 20px;">
+                                 <children>
+                                    <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="85.0" prefWidth="209.0" text="Airlines Manager" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                                       <font>
+                                          <Font name="System Bold" size="16.0" />
+                                       </font></Label>
+                                 </children>
+                                 <GridPane.margin>
+                                    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                 </GridPane.margin>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </VBox>
+                              <VBox alignment="CENTER" layoutX="30.0" layoutY="30.0" onMouseClicked="#ticketsManagerBtnOnClick" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #9381ff; -fx-background-radius: 20px;" GridPane.columnIndex="1">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="65.0" prefWidth="198.0" text="Tickets Manager" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                                       <font>
+                                          <Font name="System Bold" size="16.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <GridPane.margin>
+                                    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                 </GridPane.margin>
+                              </VBox>
+                              <VBox alignment="CENTER" layoutX="262.0" layoutY="10.0" onMouseClicked="#usersManagerBtnOnClick" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #9381ff; -fx-background-radius: 20px;" GridPane.columnIndex="2">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="68.0" prefWidth="208.0" text="Users Manager" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                                       <font>
+                                          <Font name="System Bold" size="16.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <GridPane.margin>
+                                    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                 </GridPane.margin>
+                              </VBox>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </VBox>
+               </children>
+            </GridPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

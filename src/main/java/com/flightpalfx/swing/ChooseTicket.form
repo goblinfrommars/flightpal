@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.flightpalfx.swing.ChooseTicket">
+  <grid id="27dc6" binding="chooseTicketPanel" layout-manager="GridLayoutManager" row-count="13" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="851" height="692"/>
+    </constraints>
+    <properties>
+      <background color="-1"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <component id="60099" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="20"/>
+          <text value="Choose Available Ticket"/>
+        </properties>
+      </component>
+      <component id="cefe9" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Origin"/>
+        </properties>
+      </component>
+      <component id="6672d" class="javax.swing.JComboBox" binding="originComboBox">
+        <constraints>
+          <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="369" height="30"/>
+          </grid>
+        </constraints>
+        <properties>
+          <model/>
+        </properties>
+      </component>
+      <component id="371dc" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Destination"/>
+        </properties>
+      </component>
+      <component id="fa51f" class="javax.swing.JComboBox" binding="destinationComboBox">
+        <constraints>
+          <grid row="6" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="369" height="30"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="23761" class="javax.swing.JButton" binding="searchTicketsButton">
+        <constraints>
+          <grid row="7" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="369" height="30"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-10177034"/>
+          <foreground color="-1"/>
+          <text value="Search"/>
+        </properties>
+      </component>
+      <scrollpane id="cbd79" binding="scrollPane">
+        <constraints>
+          <grid row="9" column="1" row-span="1" col-span="2" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="500" height="-1"/>
+            <maximum-size width="500" height="-1"/>
+          </grid>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="2f0c4" class="javax.swing.JTable" binding="chooseTicketTable">
+            <constraints/>
+            <properties>
+              <preferredScrollableViewportSize width="500" height="400"/>
+            </properties>
+          </component>
+        </children>
+      </scrollpane>
+      <hspacer id="af58b">
+        <constraints>
+          <grid row="1" column="3" row-span="9" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="0" height="-1"/>
+          </grid>
+        </constraints>
+      </hspacer>
+      <hspacer id="3f066">
+        <constraints>
+          <grid row="1" column="0" row-span="9" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <vspacer id="2b4db">
+        <constraints>
+          <grid row="12" column="0" row-span="1" col-span="4" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <vspacer id="eec61">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="4" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <vspacer id="15c39">
+        <constraints>
+          <grid row="8" column="1" row-span="1" col-span="2" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <component id="53360" class="javax.swing.JButton" binding="buyTicketButton" default-binding="true">
+        <constraints>
+          <grid row="11" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="369" height="30"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-10709505"/>
+          <foreground color="-1"/>
+          <text value="Buy Ticket"/>
+        </properties>
+      </component>
+      <component id="d3a5b" class="javax.swing.JButton" binding="chooseTicketCancelBtn">
+        <constraints>
+          <grid row="11" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-1105092"/>
+          <foreground color="-1"/>
+          <text value="Cancel"/>
+        </properties>
+      </component>
+      <vspacer id="7c5f4">
+        <constraints>
+          <grid row="10" column="1" row-span="1" col-span="2" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <vspacer id="2251">
+        <constraints>
+          <grid row="4" column="1" row-span="1" col-span="2" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <component id="b03cc" class="javax.swing.JButton" binding="loadAllTicketsButton" default-binding="true">
+        <constraints>
+          <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-1"/>
+          <text value="Load All Tickets"/>
+        </properties>
+      </component>
+      <component id="17684" class="javax.swing.JLabel" binding="chooseTicketBalanceLabel">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="16"/>
+          <text value="Label"/>
+        </properties>
+      </component>
+      <component id="8662c" class="javax.swing.JLabel" binding="remainTicketsLabel">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="14" style="2"/>
+          <text value="Label"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>

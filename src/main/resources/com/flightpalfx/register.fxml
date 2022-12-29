@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="717.0" prefWidth="914.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.flightpalfx.RegisterController">
+    <children>
+        <VBox layoutX="165.0" layoutY="62.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <GridPane prefHeight="773.0" prefWidth="914.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #2382F1;">
+                            <children>
+                                <GridPane prefHeight="765.0" prefWidth="457.0">
+                                    <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    </columnConstraints>
+                                    <rowConstraints>
+                                        <RowConstraints maxHeight="204.0" minHeight="10.0" prefHeight="82.0" vgrow="SOMETIMES" />
+                                        <RowConstraints maxHeight="485.0" minHeight="10.0" prefHeight="416.0" vgrow="SOMETIMES" />
+                                        <RowConstraints maxHeight="229.0" minHeight="10.0" prefHeight="165.0" vgrow="SOMETIMES" />
+                                    </rowConstraints>
+                                    <children>
+                                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                                            <GridPane.margin>
+                                                <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
+                                            </GridPane.margin>
+                                            <children>
+                                                <Label text="FLIGHTPAL REGISTRATION" textFill="WHITE">
+                                                    <font>
+                                                        <Font name="System Bold" size="20.0" />
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                        </VBox>
+                                        <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="1">
+                                            <GridPane.margin>
+                                                <Insets bottom="10.0" left="60.0" right="60.0" top="10.0" />
+                                            </GridPane.margin>
+                                            <children>
+                                                <Label text="Full Name" textFill="WHITE">
+                                                    <font>
+                                                        <Font size="14.0" />
+                                                    </font>
+                                                    <padding>
+                                                        <Insets bottom="3.0" top="3.0" />
+                                                    </padding>
+                                                </Label>
+                                                <TextField fx:id="registFullName" prefHeight="32.0" style="-fx-background-color: #fff; -fx-background-radius: 15px;">
+                                                    <VBox.margin>
+                                                        <Insets bottom="5.0" top="5.0" />
+                                                    </VBox.margin>
+                                                </TextField>
+                                                <Label text="Username" textFill="WHITE">
+                                                    <font>
+                                                        <Font size="14.0" />
+                                                    </font>
+                                                    <padding>
+                                                        <Insets bottom="3.0" top="3.0" />
+                                                    </padding>
+                                                </Label>
+                                                <TextField fx:id="registUserName" prefHeight="32.0" style="-fx-background-color: #fff; -fx-background-radius: 15px;">
+                                                    <VBox.margin>
+                                                        <Insets bottom="5.0" top="5.0" />
+                                                    </VBox.margin>
+                                                </TextField>
+                                                <Label text="Password" textFill="WHITE">
+                                                    <font>
+                                                        <Font size="14.0" />
+                                                    </font>
+                                                    <padding>
+                                                        <Insets bottom="3.0" top="3.0" />
+                                                    </padding>
+                                                </Label>
+                                                <PasswordField fx:id="registPassword" prefHeight="32.0" style="-fx-background-color: #fff; -fx-background-radius: 15px;">
+                                                    <VBox.margin>
+                                                        <Insets bottom="5.0" top="5.0" />
+                                                    </VBox.margin>
+                                                </PasswordField>
+                                                <Label text="Confirm Password" textFill="WHITE">
+                                                    <font>
+                                                        <Font size="14.0" />
+                                                    </font>
+                                                    <padding>
+                                                        <Insets bottom="3.0" top="3.0" />
+                                                    </padding>
+                                                </Label>
+                                                <PasswordField fx:id="registPasswordConf" prefHeight="32.0" style="-fx-background-color: #fff; -fx-background-radius: 15px;">
+                                                    <VBox.margin>
+                                                        <Insets bottom="5.0" top="5.0" />
+                                                    </VBox.margin>
+                                                </PasswordField>
+                                                <Label text="Email" textFill="WHITE">
+                                                    <font>
+                                                        <Font size="14.0" />
+                                                    </font>
+                                                    <padding>
+                                                        <Insets bottom="3.0" top="3.0" />
+                                                    </padding>
+                                                </Label>
+                                                <TextField fx:id="registEmail" prefHeight="32.0" style="-fx-background-color: #fff; -fx-background-radius: 15px;">
+                                                    <VBox.margin>
+                                                        <Insets bottom="5.0" top="5.0" />
+                                                    </VBox.margin>
+                                                </TextField>
+                                            </children>
+                                        </VBox>
+                                        <VBox alignment="CENTER" prefHeight="303.0" prefWidth="457.0" GridPane.rowIndex="2">
+                                            <children>
+                                                <Button mnemonicParsing="false" onAction="#registerBtnOnClick" prefHeight="44.0" prefWidth="115.0" style="-fx-background-color: #fff; -fx-background-radius: 15px;" text="Register" textFill="#4a4a4a">
+                                                    <cursor>
+                                                        <Cursor fx:constant="HAND" />
+                                                    </cursor>
+                                                    <font>
+                                                        <Font size="16.0" />
+                                                    </font>
+                                                    <VBox.margin>
+                                                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                                    </VBox.margin>
+                                                </Button>
+                                                <Label text="Already have an Account?" textFill="WHITE" />
+                                                <Hyperlink fx:id="bckToLogin" onAction="#bckToLoginOnClick" text="Login" textFill="WHITE">
+                                                    <font>
+                                                        <Font size="14.0" />
+                                                    </font>
+                                                </Hyperlink>
+                                            </children>
+                                        </VBox>
+                                    </children>
+                                </GridPane>
+                            </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #fff;" GridPane.columnIndex="1">
+                            <children>
+                                <ImageView fitHeight="385.0" fitWidth="346.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/regist/__register.png" />
+                           </image></ImageView>
+                            </children>
+                        </VBox>
+                    </children>
+                </GridPane>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>
